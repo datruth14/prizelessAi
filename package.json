@@ -2,9 +2,12 @@
   "name": "prizeless-ai",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "NODE_OPTIONS='--no-deprecation' next dev",
-    "build": "next build",
+    "build": "NODE_OPTIONS='--no-deprecation' next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -12,7 +15,7 @@
     "clsx": "latest",
     "lucide-react": "latest",
     "next": "latest",
-    "openai": "^4.0.0",
+    "openai": "^4.104.0",
     "react": "latest",
     "react-dom": "latest",
     "tailwind-merge": "latest"
